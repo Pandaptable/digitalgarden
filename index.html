@@ -25,13 +25,43 @@
 <style></style>
 </head>
 <body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header css-settings-manager plugin-cm-show-whitespace anp-td-none minimal-theme minimal-line-nums minimal-readable minimal-catppuccin-light minimal-catppuccin-dark minimal-light minimal-dark colorful-headings colorful-active links-int-on links-ext-on full-width-media minimal-folding chart-default-width table-default-width img-default-width iframe-default-width map-default-width hider-file-nav-header is-maximized ctp-latte ctp-mocha ctp-accent-light-mauve ctp-accent-mauve anuppuccin-accent-toggle anp-current-line-border-only anp-custom-checkboxes anp-speech-bubble anp-codeblock-numbers anp-list-toggle anp-table-toggle anp-h1-red anp-h2-peach anp-h3-green anp-h4-teal anp-h5-lavender anp-h6-mauve anp-bold-red anp-italic-green anp-highlight-yellow anp-custom-vault-toggle anp-file-icons anp-floating-header anp-simple-rainbow-color-toggle anp-simple-rainbow-title-toggle anp-simple-rainbow-collapse-icon-toggle anp-simple-rainbow-indentation-toggle anp-rainbow-subfolder-color-toggle anp-mini-tab-toggle is-focused">
+<div x-init="isDesktop = (window.innerWidth>=1400) ? true: false;" x-on:resize.window="isDesktop = (window.innerWidth>=1400) ? true : false;" x-data="{isDesktop: true, showFilesMobile: false}">
+<div x-show.important="!isDesktop" style="display:none">
 <nav class="navbar">
 <div class="navbar-inner">
+<span style="font-size:1.5rem;margin-right:10px" @click="showFilesMobile=!showFilesMobile"><i icon-name="menu"></i></span>
 <a href="/" style="text-decoration:none">
 <h1 style="margin:15px!important">Obsidian Vault</h1>
 </a>
 </div>
 </nav>
+</div>
+<div x-show="showFilesMobile && !isDesktop" @click="showFilesMobile = false" style="display:none" class="fullpage-overlay"></div>
+<nav class="filetree-sidebar" x-show.important="isDesktop || showFilesMobile" style="display:none">
+<a href="/" style="text-decoration:none">
+<h1 style="text-align:center">Obsidian Vault</h1>
+</a>
+<div class="folder" x-data="{isOpen: true}">
+<div x-show="isOpen" style="display:none" class="">
+<div class="folder inner-folder" x-data="{isOpen: $persist(false).as('05 - Fleeting')}" @click.stop="isOpen=!isOpen">
+<div class="foldername-wrapper align-icon">
+<i x-show="isOpen" style="display:none" icon-name="chevron-down"></i>
+<i x-show="!isOpen" icon-name="chevron-right"></i>
+<span class="foldername">05 - Fleeting</span>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/05-fleeting/test-note-2/">test note 2 </a>
+</div>
+</div>
+<div x-show="isOpen" style="display:none" class="filelist">
+<div @click.stop class="notelink active-note"><i icon-name="sticky-note" aria-hidden="true"></i><a data-note-icon="" style="text-decoration:none" class="filename" href="/">test note </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
 <main class="content cm-s-obsidian">
 <header>
 <h1></h1>
