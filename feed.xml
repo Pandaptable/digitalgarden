@@ -3,35 +3,6 @@
     <title>Obsidian Vault</title>
     <link href="https://vault.pandaptable.moe/feed.xml" rel="self" >
     <link href="https://vault.pandaptable.moe" >
-    <updated>2024-08-31T07:08:10Z</updated>
+    <updated>2024-08-31T07:23:47Z</updated>
     <id>https://vault.pandaptable.moe</id>
-        <entry>
-            <title>
-                test note
-                
-            </title>
-            <updated>2024-08-31T06:35:53.000Z</updated>
-            <id>https://vault.pandaptable.moe/</id>
-            <content type="html">
-                &lt;p&gt;galls lmeow&lt;br /&gt;
-&lt;a class=&quot;internal-link is-unresolved&quot; href=&quot;https://vault.pandaptable.moe/404&quot; target=&quot;&quot;&gt;(TEMPLATE) Daily&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;dn&lt;br /&gt;
-🤤&lt;/p&gt;
-
-            </content>
-            <link href="https://vault.pandaptable.moe/" >
-        </entry>
-        <entry>
-            <title>
-                test note 2
-                
-            </title>
-            <updated>2024-08-31T06:37:06.000Z</updated>
-            <id>https://vault.pandaptable.moe/05-fleeting/test-note-2/</id>
-            <content type="html">
-                &lt;p&gt;galls &lt;a class=&quot;internal-link&quot; target=&quot;&quot; data-note-icon=&quot;&quot; href=&quot;https://vault.pandaptable.moe/&quot;&gt;test note&lt;/a&gt;&lt;/p&gt;
-
-            </content>
-            <link href="https://vault.pandaptable.moe/05-fleeting/test-note-2/" >
-        </entry>
 </feed>

@@ -1,1 +1,1 @@
-{"homeAlias":"/","nodes":{"/05-fleeting/test-note-2/":{"id":0,"title":"test note 2","url":"/05-fleeting/test-note-2/","group":"none","home":false,"outBound":["/"],"neighbors":["/"],"backLinks":[],"noteIcon":"","hide":false,"size":1},"/":{"id":1,"title":"test note","url":"/","group":"none","home":true,"outBound":["99 - Meta/00 - Templates/(TEMPLATE) Daily"],"neighbors":["/05-fleeting/test-note-2/"],"backLinks":["/05-fleeting/test-note-2/"],"noteIcon":"","hide":false,"size":1}},"links":[{"source":0,"target":1}]}
+{"homeAlias":"/","nodes":{},"links":[]}
