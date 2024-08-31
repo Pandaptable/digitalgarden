@@ -3,6 +3,19 @@
     <title>Obsidian Vault</title>
     <link href="https://vault.pandaptable.moe/feed.xml" rel="self" >
     <link href="https://vault.pandaptable.moe" >
-    <updated>2024-08-31T07:23:47Z</updated>
+    <updated>2024-08-31T07:27:11Z</updated>
     <id>https://vault.pandaptable.moe</id>
+        <entry>
+            <title>
+                Digital Garden Home
+                
+            </title>
+            <updated>2024-08-31T07:26:16.000Z</updated>
+            <id>https://vault.pandaptable.moe/</id>
+            <content type="html">
+                &lt;p&gt;WIP&lt;/p&gt;
+
+            </content>
+            <link href="https://vault.pandaptable.moe/" >
+        </entry>
 </feed>
